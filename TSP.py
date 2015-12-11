@@ -5,14 +5,11 @@ import math
 
 """
     Notes: data.shape[0] faster than len(data[0])
-    deneme
-    deneme1
-    deneme2
-    dadada
+
 """
 class SMA:
 
-    def __init__(self, distances, inittemp=1000, finaltemp=1, equilibrium=100, cooling='geometric',coolingparam=0.7, neighbor='2opt'):
+    def __init__(self, distances, inittemp=1000, finaltemp=1, equilibrium=100, cooling='geometric', coolingparam=0.7, neighbor='2opt'):
         self.distances = distances
         self.dimension = distances.shape[0]
         self.it = inittemp
@@ -126,9 +123,13 @@ class NearestNeighbor:
     def finddistance(self, frm, to):
         return math.sqrt(math.pow((self.distances[frm][0]-self.distances[to][0]),2)+math.pow((self.distances[frm][1]-self.distances[to][1]),2))
 
+class GRASP:
+    def __init__(self, distance):
+        self.distance = distance
 
 
 
 
 
-
+    def returnfirst(self):
+        return  self.distance[0][0]
