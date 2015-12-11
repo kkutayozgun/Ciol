@@ -6,6 +6,7 @@ import math
 """
     Notes: data.shape[0] faster than len(data[0])
     deneme
+    deneme1
 """
 class SMA:
 
