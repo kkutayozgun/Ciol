@@ -8,6 +8,7 @@ import math
     deneme
     deneme1
     deneme2
+    dadada
 """
 class SMA:
 
