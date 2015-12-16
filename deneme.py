@@ -1,18 +1,12 @@
+import numpy as np
+import random
 
 
-def wrapper(func):
-    res = func(10)
-    return res
+dimension=10
+#route = np.ones(dimension,dtype=int)
 
-def geometric(t):
-    return t * 10
-
-def linear(t):
-    return t- 10
+route = random.sample(range(dimension), dimension)
 
 
-names=list()
-names.append('geometric')
-names.append('linear')
-
-print(wrapper(names[0]))
+print(route[::-1])
+print(route)

@@ -9,7 +9,7 @@ b = np.random.random_integers(50, 100, size=(N, N))
 
 data = (b + b.T)/2
 
-#print(TSP.NearestNeighbor(data).solve())
+print(TSP.NearestNeighbor(data).solve())
 
 #print(TSP.SMA(data, inittemp=1000, finaltemp=1, equilibrium=100, cooling='logaritmic',coolingparam=0.7, neighbor='2opt').solve())
 
