@@ -84,6 +84,15 @@ def incrementaltwopt(distances,obj,rt,arc1,arc2):
 
 
 
+def issymetric(list):
+    for i in range(0,len(list)):
+        for j in range(0,len(list)):
+            if(list[i][j] != list[j][i]):
+                return False
+                break
+    return True
+
+
 
 
 
